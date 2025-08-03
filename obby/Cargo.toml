@@ -1,0 +1,10 @@
+[package]
+name = "obby"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+macroquad.workspace = true
+game.workspace = true
+tiled.workspace = true
+gamepads.workspace = true

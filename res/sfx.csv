@@ -1,0 +1,5 @@
+coin,       res/sfx/coin1.wav,      res/sfx/coin2.wav 
+extra_life, res/sfx/extra_life.wav
+lost,       res/sfx/lost.ogg
+win,        res/sfx/win.wav
+jump,       res/sfx/jump.wav

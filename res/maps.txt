@@ -1,0 +1,9 @@
+res/maps/map01.tmx
+res/maps/map02.tmx
+res/maps/map03.tmx
+res/maps/map04.tmx
+res/maps/map05.tmx
+res/maps/map06.tmx
+res/maps/map09.tmx
+res/maps/map07.tmx
+res/maps/map08.tmx
