@@ -1,0 +1,19 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cargo",
+			"command": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"label": "rust: cargo run"
+		},
+		{
+			"type": "shell",
+			"command": "cargo build --target wasm32-unknown-unknown",
+			"label": "rust: build wasm",
+			"problemMatcher": []
+		}
+	]
+}
