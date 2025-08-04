@@ -42,7 +42,7 @@ impl Game {
         }
     }
 
-    pub fn bodies(&self, index: (i32, i32)) -> Vec<Body> {
+    pub fn bodies(&'_ self, index: (i32, i32)) -> Vec<Body<'_>> {
         let mut v = Vec::default();
         let a = 1;
         for dy in -a..=a {
