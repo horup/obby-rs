@@ -35,7 +35,7 @@ jobs:
       - name: Install target
         run: rustup target add wasm32-unknown-unknown 
       - name: Build
-        run: build-web.sh
+        run: ./build-web.sh
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
