@@ -3,6 +3,6 @@ if [ -d "dist" ]; then
 fi
 mkdir dist
 cargo build --target wasm32-unknown-unknown --release
-mv target/wasm32-unknown-unknown/release/obby.wasm dist/obby.wasm
-mv index.html dist/index.html
-mv res dist/res
+cp target/wasm32-unknown-unknown/release/obby.wasm dist/obby.wasm
+cp index.html dist/index.html
+cp -r res dist/res
