@@ -52,12 +52,17 @@ impl tiled::ResourceReader for TiledReader {
         &mut self,
         path: &std::path::Path,
     ) -> std::result::Result<Self::Resource, Self::Error> {
-        match self.resources.get(path.to_str().unwrap_or_default()) {
-            Some(res) => Result::Ok(Cursor::new(res.clone())),
-            None => Result::Err(std::io::Error::new(
-                std::io::ErrorKind::NotFound,
-                "file was not found",
-            )),
+        let path = path.to_str().unwrap_or_default().replace("\\", "/");
+        match self.resources.get(&path) {
+            Some(res) => {
+                return Result::Ok(Cursor::new(res.clone()));
+            }
+            None => {
+                return Result::Err(std::io::Error::new(
+                    std::io::ErrorKind::NotFound,
+                    "file was not found",
+                ));
+            }
         }
     }
 }
