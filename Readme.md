@@ -1,6 +1,8 @@
 # HØRUP'S OBBY
 A 2D platformer written in `Rust` using `Macroquad` and `Tiled`.
 
+Can be played here: https://horup.github.io/obby-rs/
+
 The game is inspired by the "Obby experiences" on Roblox.
 
 Consists of the following:
